@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- remix icon -->
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: overlay;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: transparent;
+            border-radius: 0px;
+        }
+
+        #main {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        #home-page {
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .nav {
+            width: 100%;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: lightgreen; */
+        }
+
+        .author-logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-right a {
+            margin-left: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #000;
+            /* font-family: "Roboto Flex Regular"; */
+            font-family: "Matter Regular";
+            word-spacing: 0px;
+        }
+
+        #menu-icon {
+            margin-left: 9px;
+        }
+
+        .nav-right i {
+            margin-top: 1px;
+        }
+
+        .content-container {
+            /* background-color: lightgreen; */
+            width: 100%;
+            padding: 15vw 11vw;
+        }
+
+        .content {
+            /* background-color: lightsalmon; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-upper {
+            font-family: "Matter Regular";
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-left: 6px;
+            color: #000;
+        }
+
+        .content-upper::selection {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .content-medium {
+            font-family: "Matter Regular";
+            font-size: 120px;
+            color: transparent;
+            -webkit-text-stroke: 2px #605d5d;
+            letter-spacing: -6px;
+        }
+
+        .content-lower {
+            font-family: "Matter Regular";
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-left: 75.5%;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .end-home-page {
+            width: 100%;
+            /* background-color: lightcoral; */
+            padding: 1vw 11vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .end-content {
+            font-family: "Matter Regular";
+            font-size: 30px;
+            font-weight: 600;
+            word-spacing: 2px;
+            line-height: 40px;
+        }
+
+        .end-content::selection {
+            color: #fff;
+            background-color: #000;
+        }
+
+        /* second-page */
+
+        #second-page {
+            background-color: #161616;
+            width: 100%;
+            margin-top: 20px;
+            /* border-radius: 20%; */
+        }
+
+        .featured-text {
+            display: flex;
+            flex-direction: column;
+            padding: 3vw 11vw;
+        }
+
+        .featured-heading {
+            font-family: "Matter Regular";
+            font-size: 120px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .featured-project {
+            font-family: "Matter Light";
+            font-style: italic;
+            margin-left: 12.5vw;
+        }
+    </style>
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,1000;1,9..40,400;1,9..40,500&family=Do+Hyeon&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Roboto:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- link to google fonts -->
+</head>
+
+<body>
+    <div id="main">
+        <div id="home-page">
+            <div class="nav">
+                <div class="nav-left">
+                    <p class="author-logo">anshuman pattnaik</p>
+                </div>
+                <div class="nav-right">
+                    <a href="#">our showreel</a>
+                    <a href="#">menu</a>
+                    <i class="ri-menu-line" id="menu-icon"></i>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="content">
+                    <p class="content-upper">Hi, I am a</p>
+                    <p class="content-medium">Frontend Developer.</p>
+                    <p class="content-lower">based in India.</p>
+                </div>
+            </div>
+            <div class="end-home-page">
+                <p class="end-content" style="margin-top: 1px;">A dynamic programmer with a passion for web design,</p>
+                <p class="end-content">I blend simplicity and beauty seamlessly.</p>
+                <p class="end-content">I craft functional yet creative websites.</p>
+            </div>
+        </div>
+        <div id="second-page">
+            <div class="featured-text">
+                <p class="featured-heading">Featured</p>
+                <p class="featured-heading featured-project">Projects</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
