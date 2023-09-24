@@ -20,7 +20,8 @@ let cursor_content = document.querySelector(".mf-cursor");
 let bts_anshp = document.querySelector(".bts-anshp");
 let anshp_cast = document.querySelector(".anshp-cast");
 let sphere = document.querySelector(".sphere");
-let spotify = document.querySelector(".spotify")
+let spotify = document.querySelector(".spotify");
+let gmail_a = document.querySelector(".gmail-a");
 // cursor_content.style.color = "blue";
 
 if (screen.width >= 600) {
@@ -64,9 +65,9 @@ if (screen.width >= 600) {
     });
 }
 
-if (screen.width < 600) {
-    cursor.hide();
-}
+// if (screen.width < 600) {
+//     cursor.hide();
+// }
 
 // cursor.style.backgroundColor = "red";
 
@@ -240,8 +241,8 @@ function skipBtn() {
     })
 
     gmail_btn.addEventListener("click", () => {
-        let subject = "Want to connect";
-        let body = "Hello nice to meet you,"
+        // let subject = "Want to connect";
+        // let body = "Hello nice to meet you,"
         window.open("mailto:helloanshu04@gmail.com?subject=" + subject + "&body=" + body, "_blank");
     })
 
@@ -266,3 +267,9 @@ function skipBtn() {
     })
 
 }
+
+let subject = "Want to connect";
+let body = "Hello nice to meet you,"
+// window.open("mailto:helloanshu04@gmail.com?subject=" + subject + "&body=" + body, "_blank");
+// gmail_a.src = "mailto:helloanshu04@gmail.com?subject=" + subject + "&body=" + body;
+let src= "mailto:helloanshu04@gmail.com?subject=Want to connnect&body=Hello nice to meet you"

@@ -597,7 +597,7 @@ body {
     .menu-container {
         background-color: #161616;
         position: absolute;
-        z-index: 9999999;
+        z-index: 999;
         margin-top: -87px;
         margin-left: 49vw;
         padding: 8vw 3vw;
