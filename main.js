@@ -64,9 +64,9 @@ if (screen.width >= 600) {
     });
 }
 
-if (screen.width < 600) {
-    cursor.hide();
-}
+// if (screen.width < 600) {
+//     cursor.hide();
+// }
 
 // cursor.style.backgroundColor = "red";
 
