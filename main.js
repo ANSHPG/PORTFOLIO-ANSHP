@@ -154,14 +154,14 @@ function menuOpen() {
             ease: Power2
         });
     }
-    // console.log(menu_opcl);
-    // setTimeout(() => {
-    //     menu_opcl = 1;
-    //     console.log(menu_opcl);
-    //     console.log("value going to be opened")
-    // }, 1100);
-    menu_opcl = 1
     console.log(menu_opcl);
+    setTimeout(() => {
+        menu_opcl = 1;
+        console.log(menu_opcl);
+        console.log("value going to be opened")
+    }, 1100);
+    // menu_opcl = 1
+    // console.log(menu_opcl);
 }
 
 function menuClose() {
@@ -181,11 +181,11 @@ function menuClose() {
     }
     menu_opcl = 0;
     console.log(menu_opcl);
-    // setTimeout(() => {
-    //     menu_opcl = 0;
-    //     console.log(menu_opcl);
-    //     console.log("value going to be closed")
-    // }, 1100);
+    setTimeout(() => {
+        menu_opcl = 0;
+        console.log(menu_opcl);
+        console.log("value going to be closed")
+    }, 1100);
 }
 
 menu_pull.addEventListener("click", () => {
@@ -378,7 +378,7 @@ window.addEventListener('click', function (e) {
         console.log("clicked outside the box");
         if (menu_opcl == 1) {
             console.log("closing outside div")
-            // menuClose()
+            menuClose()
         }
     }
 });
