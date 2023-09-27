@@ -76,8 +76,7 @@ body {
     text-decoration: none;
     color: #000;
     /* font-family: "Roboto Flex Regular"; */
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     word-spacing: 0px;
 }
 
@@ -110,8 +109,7 @@ body {
 
 .menu-upper-left {
     font-size: 17px;
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     color: #fff;
 }
 
@@ -125,9 +123,7 @@ body {
 
 .menu-container-lower p {
     font-size: 17px;
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     text-transform: capitalize;
     margin-bottom: 20px;
     color: #fff;
@@ -160,8 +156,7 @@ body {
 }
 
 .content-upper {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -175,8 +170,7 @@ body {
 }
 
 .content-medium {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 7.5rem;
     /* 120 px   7.8125vw  7.5rem*/
     color: transparent;
@@ -189,8 +183,7 @@ body {
 }
 
 .content-lower {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -208,8 +201,7 @@ body {
 }
 
 .end-content {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 30px;
     font-weight: 600;
     word-spacing: 2px;
@@ -240,17 +232,14 @@ body {
 }
 
 .featured-heading {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 120px;
     font-weight: 500;
     color: #fff;
 }
 
 .featured-project {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
     margin-left: 12.5vw;
 }
@@ -263,9 +252,7 @@ body {
 }
 
 .scroll-instruction {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-size: 20px;
     color: #817f7f;
     padding-bottom: 2vw;
@@ -398,17 +385,14 @@ body {
 }
 
 .project-name {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-size: 29px;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 
 .project-short-description {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     /* font-size: 37px; */
     /* font-size:calc(22px + 1.5vw); */
     font-size: 2.4088541666666665vw;
@@ -421,39 +405,30 @@ body {
     color: #817f7f;
     color: #8739f9;
     font-style: italic;
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     text-transform: initial;
 }
 
 .special-2 {
     color: #e86c07;
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
 }
 
 .special-3 {
     color: #0b2c87;
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
 }
 
 .special-4 {
     color: #1DB954;
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
 }
 
 .project-tags {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 1.1067708333333333vw;
     margin-top: 20px;
     font-weight: 500;
@@ -484,8 +459,7 @@ body {
 
 .view-projects button {
     padding: 1.3vw 2vw;
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 20px;
     color: #fff;
     background-color: transparent;
@@ -508,8 +482,7 @@ body {
 
 .third-page-upper {
     color: #000;
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 100px;
     display: flex;
     flex-direction: column;
@@ -518,9 +491,7 @@ body {
 }
 
 .hey {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
 }
 
@@ -531,9 +502,7 @@ body {
 }
 
 .third-page-middle p {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-size: 30px;
 }
 
@@ -549,8 +518,7 @@ body {
 
 .third-page-lower button {
     padding: 1.3vw 2vw;
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -576,8 +544,7 @@ body {
 }
 
 .fourth-page-upper p {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 120px;
     font-weight: 500;
     color: #fff;
@@ -590,9 +557,7 @@ body {
 }
 
 .resources {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     font-style: italic;
 }
 
@@ -603,8 +568,7 @@ body {
 
 .fourth-page-middle button {
     padding: 1.3vw 2vw;
-    /* font-family: "Matter Regular"; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Matter Regular";
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -622,9 +586,7 @@ body {
 }
 
 .fourth-page-lower p {
-    /* font-family: "Matter Light"; */
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
+    font-family: "Matter Light";
     width: 62.5%;
     /* background-color: crimson; */
     font-size: 24px;
