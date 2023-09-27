@@ -386,10 +386,14 @@ window.addEventListener('click', function (e) {
 window.addEventListener("scroll", () => {
     console.log(menu_container.getBoundingClientRect())
     console.log(end_home_page.getBoundingClientRect().top)
-    if(menu_opcl == 1){
-        if(menu_container.getBoundingClientRect().bottom <= 0) {
+    if (menu_opcl == 1) {
+        if (menu_container.getBoundingClientRect().bottom <= 0) {
             menuClose();
         }
     }
 
 })
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
