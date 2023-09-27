@@ -26,6 +26,16 @@ body {
     border-radius: 0px;
 }
 
+@font-face {
+    font-family: "Matter Regular";
+    src: url('resources/fonts-ttf/matter-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Matter Light";
+    src: url('resources/fonts-ttf/matter-light.ttf') format('truetype');
+}
+
 .mouseCursor {
     width: 20px;
     height: 20px;
@@ -76,8 +86,7 @@ body {
     text-decoration: none;
     color: #000;
     /* font-family: "Roboto Flex Regular"; */
-    /* font-family: "Matter Regular"; */
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Matter Regular";
     word-spacing: 0px;
 }
 
@@ -111,7 +120,6 @@ body {
 .menu-upper-left {
     font-size: 17px;
     font-family: "Matter Regular";
-    font-family: 'Nunito Sans', sans-serif;
     color: #fff;
 }
 
@@ -172,9 +180,7 @@ body {
 }
 
 .content-medium {
-    /* font-family: "Matter Regular"; */
-    font-family: 'Nunito Sans', sans-serif;
-
+    font-family: "Matter Regular";
     font-size: 7.5rem;
     /* 120 px   7.8125vw  7.5rem*/
     color: transparent;
@@ -612,9 +618,12 @@ body {
 
     @font-face {
         font-family: "Matter Regular";
-        src:
-            local("Matter Regular"),
-            url("resources/fonts-ttf/matter-regular.ttf") format("ttf");
+        src: url('resources/fonts-ttf/matter-regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: "Matter Light";
+        src: url('resources/fonts-ttf/matter-light.ttf') format('truetype');
     }
 
     .nav {
