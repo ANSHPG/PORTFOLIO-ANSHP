@@ -192,7 +192,7 @@ body {
 .based-container {
     align-self: flex-end;
     /* margin-top: 63px; */
-    background-color: #1DB954;
+    /* background-color: #1DB954; */
 
 }
 
@@ -753,7 +753,7 @@ body {
         /* font-family: 'Nunito Sans', sans-serif; */
         font-family: "Matter Regular";
         margin-bottom: 4px;
-        background-color: #1DB954;
+        /* background-color: #1DB954; */
     }
 
     .based-container {
