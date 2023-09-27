@@ -22,6 +22,9 @@ let anshp_cast = document.querySelector(".anshp-cast");
 let sphere = document.querySelector(".sphere");
 let spotify = document.querySelector(".spotify");
 let gmail_a = document.querySelector(".gmail-a");
+let nav = document.querySelector(".nav");
+let home_page = document.querySelector("#home-page");
+let content_container = document.querySelector(".content-container");
 // cursor_content.style.color = "blue";
 
 if (screen.width >= 600) {
@@ -134,7 +137,7 @@ window.addEventListener("mousemove", function (details) {
 
 // }
 // update();
-
+let menu_opcl = 0;
 function menuOpen() {
     if (screen.width > 600) {
         gsap.to(menu_container, {
@@ -150,6 +153,7 @@ function menuOpen() {
             ease: Power2
         });
     }
+    menu_opcl = 1;
 }
 
 function menuClose() {
@@ -167,6 +171,7 @@ function menuClose() {
             ease: Power2
         });
     }
+    menu_opcl = 0;
 }
 
 menu_pull.addEventListener("click", () => {
@@ -268,8 +273,97 @@ function skipBtn() {
 
 }
 
-let subject = "Want to connect";
-let body = "Hello nice to meet you,"
-// window.open("mailto:helloanshu04@gmail.com?subject=" + subject + "&body=" + body, "_blank");
-// gmail_a.src = "mailto:helloanshu04@gmail.com?subject=" + subject + "&body=" + body;
-let src= "mailto:helloanshu04@gmail.com?subject=Want to connnect&body=Hello nice to meet you"
+function animation_first() {
+    let timeLine = gsap.timeline();
+
+    timeLine.from(nav, {
+        y: '-10',
+        opacity: 0,
+        duration: 1,
+        ease: Expo.easeInOut
+    })
+        .to(".cover-content", {
+            y: '0',
+            ease: Expo.easeInOut,
+            duration: 1,
+            stagger: 0.3
+        })
+        .to(".end-content", {
+            x: '0',
+            ease: Expo.easeInOut,
+            duration: 1,
+            stagger: 0.3
+        })
+}
+
+animation_first();
+
+// let positionX;
+// let positionY;
+// window.addEventListener("mousemove", (details) => {
+//     positionX = details.clientX;
+//     positionY = details.clientY;
+// })
+
+// home_page.addEventListener("click", () => {
+
+//     console.log("clicked")
+//     if (positionX < menu_container.getBoundingClientRect().left) {
+//         if (positionY > menu_container.getBoundingClientRect().top) {
+//             if (menu_opcl == 1) {
+//                 menuClose();
+//                 console.log("closed Menu");
+//             }
+//         }
+//     }
+// })
+
+// content_container.addEventListener("click", () => {
+//     if (menu_opcl == 1) {
+//         menuClose();
+//         console.log("closed Menu")
+//     }
+// })
+
+// function checkPosition() {
+//     let positionX;
+//     let positionY;
+//     window.addEventListener("mousemove", (details) => {
+//         positionX = details.clientX;
+//         positionY = details.clientY;
+//     })
+
+//     if (positionX < menu_container.getBoundingClientRect().left) {
+//         if (positionY > menu_container.getBoundingClientRect().bottom) {
+//             return 1;
+//         }
+//         else {
+//             return 0;
+//         }
+//     }
+//     else {
+//         return 0;
+//     }
+// }
+
+// window.addEventListener("click",() => {
+//     if(checkPosition() == 1) {
+//         if(menu_opcl == 1) {
+//             menuClose();
+//             console.log("close - 2")
+//         }
+//     }
+// })
+
+window.addEventListener('click', function (e) {
+    if (menu_container.contains(e.target)) {
+        // Clicked in box
+        console.log("clicked inside box");
+    } else {
+        // Clicked outside the box
+        console.log("clicked outside the box");
+        if(menu_opcl == 1) {
+            console.log("closing outside div")
+        }
+    }
+});

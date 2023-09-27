@@ -59,6 +59,10 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-left {
+    background-color: #8739f9;
+}
+
 .nav-right {
     display: flex;
     /* background-color: #817f7f; */
@@ -129,7 +133,20 @@ body {
     /* background-color: lightgreen; */
     width: 100%;
     padding: 15vw 11vw;
+    background-color: #e86c07;
     /* background-color: #817f7f; */
+}
+
+.cover {
+    width: fit-content;
+    height: fit-content;
+    background-color: chartreuse;
+    overflow: hidden;
+    padding-bottom: 0%;
+}
+
+.cover-content {
+    transform: translateY(100%);
 }
 
 .content {
@@ -161,19 +178,23 @@ body {
     letter-spacing: -6px;
 }
 
+.based-container {
+    align-self: flex-end;
+}
+
 .content-lower {
     font-family: "Matter Regular";
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1px;
-    margin-left: 75.5%;
+    /* margin-left: 75.5%; */
     margin-top: 10px;
     display: none;
 }
 
 .end-home-page {
     width: 100%;
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
     padding: 1vw 11vw;
     display: flex;
     flex-direction: column;
@@ -185,6 +206,7 @@ body {
     font-weight: 600;
     word-spacing: 2px;
     line-height: 40px;
+    transform: translateX(100%);
 }
 
 .end-content::selection {
@@ -584,6 +606,13 @@ body {
         /* overflow-x: hidden; */
     }
 
+    @font-face {
+        font-family: "Matter Regular";
+        src:
+            local("Matter Regular"),
+            url("resources/fonts-ttf/matter-regular.ttf") format("ttf");
+    }
+
     .nav {
         width: 100%;
         padding: 30px 20px;
@@ -614,7 +643,8 @@ body {
 
     .menu-upper-left {
         font-size: 17px;
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         color: #fff;
     }
 
@@ -629,7 +659,8 @@ body {
     .menu-container-lower p {
         font-size: 14px;
         letter-spacing: 1.5px;
-        font-family: "Matter Light";
+        /* font-family: "Matter Light"; */
+        font-family: 'Nunito Sans', sans-serif;
         text-transform: capitalize;
         margin-bottom: 20px;
         color: #fff;
@@ -660,7 +691,8 @@ body {
         text-decoration: none;
         color: #000;
         /* font-family: "Roboto Flex Regular"; */
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         word-spacing: 0px;
     }
 
@@ -690,7 +722,7 @@ body {
 
     .content-upper {
         font-size: 30px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         margin-left: 2px;
     }
 
@@ -703,7 +735,6 @@ body {
     .content-lower {
         font-size: 30px;
         display: block;
-        margin-left: 38%;
         /* align-self: flex-end; */
         margin-top: 10px;
     }
@@ -827,7 +858,8 @@ body {
     }
 
     .project-short-description {
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         /* font-size: 37px; */
         /* font-size:calc(22px + 1.5vw); */
         /* font-size: 2.4088541666666665vw; */
@@ -838,7 +870,8 @@ body {
     }
 
     .project-tags {
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 15px;
         /* margin-top: 1.3020833333333333vw; */
         font-size: calc(8.5px + 1.5vw);
@@ -867,7 +900,8 @@ body {
 
     .view-projects button {
         padding: 2.3vw 3vw;
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 15px;
         color: #fff;
         letter-spacing: 1.2px;
@@ -893,7 +927,8 @@ body {
 
     .third-page-upper {
         color: #000;
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 52px;
         display: flex;
         flex-direction: column;
@@ -910,7 +945,8 @@ body {
     }
 
     .third-page-middle p {
-        font-family: "Matter Light";
+        /* font-family: "Matter Light"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 30px;
     }
 
@@ -927,7 +963,8 @@ body {
 
     .third-page-lower button {
         padding: 2.3vw 3vw;
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 17px;
         font-weight: 500;
         color: #000;
@@ -966,7 +1003,8 @@ body {
     }
 
     .fourth-page-upper p {
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 50px;
         font-weight: 500;
         color: #fff;
@@ -981,7 +1019,8 @@ body {
 
     .fourth-page-middle button {
         padding: 1.3vw 2vw;
-        font-family: "Matter Regular";
+        /* font-family: "Matter Regular"; */
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 1px;
@@ -1000,7 +1039,8 @@ body {
     }
 
     .fourth-page-lower p {
-        font-family: "Matter Light";
+        /* font-family: "Matter Light"; */
+        font-family: 'Nunito Sans', sans-serif;
         width: 100%;
         /* background-color: crimson; */
         font-size: 20px;

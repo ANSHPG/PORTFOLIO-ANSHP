@@ -1,0 +1,47 @@
+function animation_first() {
+  let tl = gsap.timeline();
+
+  tl.from("#nav", {
+    y: '-10',
+    opacity: 0,
+    duration: 1.5,
+    ease: Expo.easeInOut
+  })
+    .to(".cover-content", {
+      y: '0',
+      ease: Expo.easeInOut,
+      duration: 1.5,
+      stagger: 0.3,
+      delay: -1
+    })
+    .from("#footer", {
+      y: '-10',
+      ease: Expo.easeInOut,
+      opacity: 0,
+      duration: 2,
+      delay: -1
+    })
+    .to("#arrow-circle", {
+      opacity: 1,
+      ease: Expo.easeInOut,
+      duration: 0.2,
+      delay: -0.5
+    })
+
+}
+
+animation_first();
+
+
+
+.cover {
+    width: fit-content;
+    height: fit-content;
+    overflow-y: hidden;
+    padding-bottom: 0%;
+    padding-top: 12px;
+}
+
+.cover-content {
+    transform: translateY(100%);
+}
