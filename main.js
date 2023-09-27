@@ -25,6 +25,7 @@ let gmail_a = document.querySelector(".gmail-a");
 let nav = document.querySelector(".nav");
 let home_page = document.querySelector("#home-page");
 let content_container = document.querySelector(".content-container");
+let end_home_page = document.querySelector(".end-home-page");
 // cursor_content.style.color = "blue";
 
 if (screen.width >= 600) {
@@ -153,25 +154,38 @@ function menuOpen() {
             ease: Power2
         });
     }
-    menu_opcl = 1;
+    // console.log(menu_opcl);
+    // setTimeout(() => {
+    //     menu_opcl = 1;
+    //     console.log(menu_opcl);
+    //     console.log("value going to be opened")
+    // }, 1100);
+    menu_opcl = 1
+    console.log(menu_opcl);
 }
 
 function menuClose() {
     if (screen.width > 600) {
         gsap.to(menu_container, {
             x: "20vw",
-            duration: 2,
+            duration: 1,
             ease: Power2
         });
     }
     else {
         gsap.to(menu_container, {
             x: "51vw",
-            duration: 2,
+            duration: 1,
             ease: Power2
         });
     }
     menu_opcl = 0;
+    console.log(menu_opcl);
+    // setTimeout(() => {
+    //     menu_opcl = 0;
+    //     console.log(menu_opcl);
+    //     console.log("value going to be closed")
+    // }, 1100);
 }
 
 menu_pull.addEventListener("click", () => {
@@ -362,8 +376,20 @@ window.addEventListener('click', function (e) {
     } else {
         // Clicked outside the box
         console.log("clicked outside the box");
-        if(menu_opcl == 1) {
+        if (menu_opcl == 1) {
             console.log("closing outside div")
+            // menuClose()
         }
     }
 });
+
+window.addEventListener("scroll", () => {
+    console.log(menu_container.getBoundingClientRect())
+    console.log(end_home_page.getBoundingClientRect().top)
+    if(menu_opcl == 1){
+        if(menu_container.getBoundingClientRect().bottom <= 0) {
+            menuClose();
+        }
+    }
+
+})
